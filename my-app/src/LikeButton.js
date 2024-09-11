@@ -1,6 +1,6 @@
 import {useState} from "react";
-import emptyHeart from "/Users/breannahumphres/Development/code/phase-2/phase-2-project-frontend/my-app/src/kisspng-animation-awesome-pixel-5af9c902e17b21.4649731615263193629236.jpg";
-import fullHeart from "/Users/breannahumphres/Development/code/phase-2/phase-2-project-frontend/my-app/src/360_F_133365873_7eswWXyuviHLkyIBMy6fChgC3EjtFrmD.jpg"
+import emptyHeart from "./emptyheart.jpg";
+import fullHeart from "./fullheart.jpg";
 import "./LikeButton.css";
 
 
