@@ -7,7 +7,7 @@ function RandomCharacterList() {
     const [fetchedRandomCharacters, setFetchedRandomCharacters] = useState([]);
     useEffect(() =>  {
     
-      fetch("http://localhost:3000/Randoms")
+      fetch("https://phase-2-project-backend-x04p.onrender.com/Randoms")
       .then((response) => response.json())
       .then((data )=> setFetchedRandomCharacters(data))
       .catch((error) => console.error(error))

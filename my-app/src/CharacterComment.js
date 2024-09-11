@@ -5,7 +5,7 @@ function CharacterComment() {
 const [comment, setComment] = useState([]);
 
 useEffect(() => {
-    fetch("http://localhost:3000/Villagers/")
+    fetch("https://phase-2-project-backend-x04p.onrender.com/Villagers")
     .then((response) => response.json())
     .then((villagers) => {
         const comments= getRandomComments(villagers);

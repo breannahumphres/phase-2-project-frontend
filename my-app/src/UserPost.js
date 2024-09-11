@@ -29,7 +29,7 @@ export default function UserPost({fetchedCharacters}) {
             Caption: event.target.caption.value,
             Img: event.target.img.value
         }
-        fetch("http://localhost:3000/Villagers", {
+        fetch("https://phase-2-project-backend-x04p.onrender.com/Villagers", {
             method: "POST",
             headers: { "Content-Type": "application/json", "Accept": "application/json" },
             body: JSON.stringify(newPost)
@@ -42,7 +42,7 @@ export default function UserPost({fetchedCharacters}) {
     }
 
         function handleDelete(postId) {
-            fetch(`http://localhost:3000/Villagers/${postId}`, {
+            fetch(`https://phase-2-project-backend-x04p.onrender.com/Villagers/${postId}`, {
                 method: "DELETE", 
             })
             .then(()=> {
