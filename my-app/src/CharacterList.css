@@ -6,7 +6,7 @@
     justify-content: center;   
     box-sizing: border-box;
 }
-.character-card{
+.character-card, .post-list{
     background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 10px;
