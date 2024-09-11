@@ -12,7 +12,7 @@ const handleLikeClick = () => {
 };
 
 return (
-    <div onClick={handleLikeClick} style={{cursor: "pointer"}}>
+    <div className="like-button-container" onClick={handleLikeClick} style={{cursor: "pointer"}}>
         
         <img 
         className="like-button"

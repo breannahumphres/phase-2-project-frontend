@@ -1,7 +1,7 @@
 import CharacterList from './CharacterList';
 import UserPost from './UserPost';
 import {useState, useEffect} from "react";
-
+import './Home.css';
 
 function Home() {
     const [fetchedCharacters, setFetchedCharacters] = useState([]);
@@ -14,7 +14,7 @@ function Home() {
     }, []);
 
   return (
-    <div className="Home">
+    <div className="centered-container">
       <h1>Stardew Valley Social</h1>
    <UserPost fetchedCharacters={fetchedCharacters}/>
      <CharacterList fetchedCharacters={fetchedCharacters}/>

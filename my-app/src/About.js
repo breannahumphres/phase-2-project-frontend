@@ -1,9 +1,11 @@
+import "./Home.css";
+
 
 function About() {
 
     return (
 
-        <div className="mt-3">
+        <div className="about">
 <h1>About Stardew Valley Social</h1>
             <p>
                 Welcome to Stardew Valley Social! This is my second ever project and close to my heart due to my love for gaming - and Stardew Valley in particular. 

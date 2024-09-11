@@ -1,4 +1,5 @@
 import {useState, useEffect} from "react";
+import "./Home.css";
  
 function CharacterComment() {
 const [comment, setComment] = useState([]);
@@ -22,10 +23,7 @@ function getRandomComments(villagers) {
     const randomComments = selectedVillagers.map((villager) => {
         const comments = villager.Comments || [];
         if(comments.length === 0) {
-            return {
-                villagername: villager.Name,
-                comment: "No comment available",
-            };
+            return null;
         }
         const randomComment = 
         comments[Math.floor(Math.random() * comments.length)];
@@ -33,13 +31,13 @@ function getRandomComments(villagers) {
             villagerName: villager.Name,
             comment: randomComment,
         };
-    });
+    }).filter(comment => comment !==null);
     return randomComments;
 }
 
     return (
 
-        <div>
+        <div className="comments">
             <h4>Comments from Villagers:</h4>
             {comment.length > 0 ? (
                 comment.map((commentObj, index) => (

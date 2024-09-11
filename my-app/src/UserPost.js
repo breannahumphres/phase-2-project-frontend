@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Form from "./Form";
 import CharacterPost from "./CharacterPost";
+import "./Home.css";
 
 export default function UserPost({fetchedCharacters}) {
     const [ userPost, setUserPost ] = useState([]);
@@ -52,7 +53,7 @@ export default function UserPost({fetchedCharacters}) {
 
 
     return (
-        <div className="mt-2.5 grid grid-cols-2 gap-5">
+        <div className="button">
             <button onClick={openModal} className="open-modal-button">
                 Click here to add your own post! 
             </button>

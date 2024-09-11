@@ -4,3 +4,9 @@
     transition: transform 0.2s ease;
     object-fit: contain;
 }
+
+.like-button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
