@@ -24,7 +24,6 @@ export default function UserPost({fetchedCharacters}) {
             const userPostCount = userPost?.length || 0;
 
         const newPost = {
-            Id: fetchedCount + userPostCount + 1,
             Name: event.target.name.value,
             Caption: event.target.caption.value,
             Img: event.target.img.value
