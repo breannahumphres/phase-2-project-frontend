@@ -20,9 +20,6 @@ export default function UserPost({fetchedCharacters}) {
         // Prevent default behavior.
         event.preventDefault();
 
-            const fetchedCount = fetchedCharacters?.length || 0;
-            const userPostCount = userPost?.length || 0;
-
         const newPost = {
             Name: event.target.name.value,
             Caption: event.target.caption.value,
